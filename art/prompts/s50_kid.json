@@ -1,0 +1,15 @@
+{
+  "id": "s50_kid",
+  "input_images": [
+    {
+      "path": "raw/charsheet/charsheet_v1.png",
+      "role": "character reference only: keep the protagonist's look (short dark bob that always hides the face, cornflower-blue shirt, mustard-yellow cable-knit sweater vest, walnut-brown trousers, teal sneakers; as a child: mustard-yellow T-shirt and teal shorts) and the flat print style; do not copy the sheet layout or poses"
+    }
+  ],
+  "primary_request": "You can no longer live in a simple world, because you have already asked the question: in the front row of the crowd, the summer child holds the big guitar and looks up at the stage, where the grown protagonist is a backlit silhouette.",
+  "scene": "the front edge of a small stage seen from the audience; strong stage lights behind the performer create a backlit silhouette",
+  "subject": "in the foreground, the child from the reference (mustard-yellow T-shirt, teal shorts, short dark bob) seen from behind, hugging a guitar almost as big as them, looking up; on the stage the grown protagonist kneeling at the edge, a flat backlit silhouette leaning toward the child",
+  "composition": "the child large in the lower-left foreground from behind; the stage silhouette upper-right; calm light area at the top-left for text",
+  "lighting": "strong backlight from the stage",
+  "palette": "all five inks: fluorescent pink (#FF48B0), mustard yellow (#FFB511), cornflower blue (#62A8E5), teal (#00838A), walnut brown (#925F52)"
+}

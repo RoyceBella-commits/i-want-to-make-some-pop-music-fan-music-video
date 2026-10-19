@@ -1,0 +1,9 @@
+{
+  "use_case": "illustration-story",
+  "asset_type": "keyframe illustration for a narrative music video (16:9 frame); it will later be color-separated into spot-color plates and given risograph texture in post",
+  "style": "flat screen-print / risograph poster illustration: bold flat shapes, clean edges, simple readable silhouettes, overprinted spot colors, minimal small detail, indie zine look; the image itself must stay clean (no grain, no halftone dots, no paper texture, no gradients) because texture is added later",
+  "palette": "only these flat inks on warm off-white paper (#F3ECDD): mustard yellow (#FFB511), teal (#00838A), cornflower blue (#62A8E5), walnut brown (#925F52), fluorescent pink (#FF48B0); overlaps of two inks may create darker mixed tones; no other hues, no black outlines",
+  "protagonist": "the protagonist has a short dark bob haircut; their face is NEVER visible: always seen from behind, from a three-quarter back view, or with hair/objects fully hiding the face; no eyes, nose or mouth drawn anywhere",
+  "constraints": "landscape 16:9 frame; keep every important element inside the central band (the top and bottom 6% may be cropped); leave calm empty areas for lyric text as described; no text, letters, numbers, logos or watermarks anywhere (sheet music, books, posters and records must have no legible writing)",
+  "avoid": "faces or facial features, text of any kind, photorealism, 3D rendering, gradients, grain, halftone, heavy black outlines, extra people not described"
+}

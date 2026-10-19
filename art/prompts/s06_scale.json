@@ -1,0 +1,15 @@
+{
+  "id": "s06_scale",
+  "input_images": [
+    {
+      "path": "raw/charsheet/charsheet_v1.png",
+      "role": "character reference only: keep the protagonist's look (short dark bob that always hides the face, cornflower-blue shirt, mustard-yellow cable-knit sweater vest, walnut-brown trousers, teal sneakers; as a child: mustard-yellow T-shirt and teal shorts) and the flat print style; do not copy the sheet layout or poses"
+    }
+  ],
+  "primary_request": "Learning to enrich scales: a staircase made of piano keys that the young adult climbs.",
+  "scene": "a surreal staircase in an airy art-school atrium: each step is a giant piano key (white keys as steps, black keys as narrow raised blocks between them), rising diagonally from lower-left to upper-right",
+  "subject": "the same young adult from the reference, seen from behind and slightly to the side, climbing the key-steps, guitar case on the back",
+  "composition": "wide shot, the staircase as a clear diagonal with about 9 visible steps; the figure on the lower third of the stairs; calm empty wall area in the upper-left for text",
+  "lighting": "bright daylight, flat shadows under each step",
+  "palette": "fluorescent pink (#FF48B0), mustard yellow (#FFB511) and teal (#00838A) dominant, cornflower blue (#62A8E5) and walnut brown (#925F52) supporting"
+}

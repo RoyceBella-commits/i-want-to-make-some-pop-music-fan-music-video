@@ -1,0 +1,15 @@
+{
+  "id": "s08_sounds",
+  "input_images": [
+    {
+      "path": "raw/charsheet/charsheet_v1.png",
+      "role": "character reference only: keep the protagonist's look (short dark bob that always hides the face, cornflower-blue shirt, mustard-yellow cable-knit sweater vest, walnut-brown trousers, teal sneakers; as a child: mustard-yellow T-shirt and teal shorts) and the flat print style; do not copy the sheet layout or poses"
+    }
+  ],
+  "primary_request": "Never defining sound: the young adult records the sounds of pots, pans, bottles and kitchenware with a studio microphone.",
+  "scene": "a small cluttered recording booth with acoustic foam panels; a studio condenser microphone on a stand; pots, pans, glass bottles, a kettle and wooden spoons arranged like a drum kit on a table; headphones and a cable on the floor",
+  "subject": "the same young adult from the reference, seen from behind-side with head lowered, hitting a pan with a wooden spoon toward the microphone",
+  "composition": "medium-wide shot; the microphone clearly visible on the left-center; calm empty foam-panel wall in the upper-right for text",
+  "lighting": "warm studio lamp light",
+  "palette": "fluorescent pink (#FF48B0), mustard yellow (#FFB511) and teal (#00838A) dominant, cornflower blue (#62A8E5) and walnut brown (#925F52) supporting"
+}

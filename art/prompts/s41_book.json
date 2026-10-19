@@ -1,0 +1,15 @@
+{
+  "id": "s41_book",
+  "input_images": [
+    {
+      "path": "raw/charsheet/charsheet_v1.png",
+      "role": "character reference only: keep the protagonist's look (short dark bob that always hides the face, cornflower-blue shirt, mustard-yellow cable-knit sweater vest, walnut-brown trousers, teal sneakers; as a child: mustard-yellow T-shirt and teal shorts) and the flat print style; do not copy the sheet layout or poses"
+    }
+  ],
+  "primary_request": "Curious about how history is built: the protagonist sits before a giant open book whose pages are a panoramic scroll of music history.",
+  "scene": "a giant open book filling the frame horizontally; its pages show a continuous illustrated panorama from left to right: bone flutes and hand drums, a guqin and a pipa, a harpsichord, an orchestra, a gramophone, an electric guitar and amplifier, a modular synthesizer",
+  "subject": "the same young adult from the reference small, sitting cross-legged at the bottom center in front of the book, seen from behind, looking up",
+  "composition": "wide panorama; the history scroll spans the whole width so the camera can truck left to right; the figure small at the bottom center; calm area at the top for text",
+  "lighting": "warm reading light",
+  "palette": "all five inks: fluorescent pink (#FF48B0), mustard yellow (#FFB511), cornflower blue (#62A8E5), teal (#00838A), walnut brown (#925F52)"
+}

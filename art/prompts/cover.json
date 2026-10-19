@@ -1,0 +1,17 @@
+{
+  "id": "cover",
+  "asset_type": "cover image (16:9) for a narrative music video; it must also survive a centred 4:3 crop; it will later be colour-separated into spot-colour plates and given risograph texture, and the title text is added later in code",
+  "primary_request": "Cover image for the music video: seen from directly above, the grown-up protagonist and their summer-child self sit back to back in the middle of a round teal rug, each holding a guitar, surrounded by a ring of small objects from their story — past and present forming a loop.",
+  "input_images": [
+    {
+      "path": "raw/charsheet/charsheet_v1.png",
+      "role": "character reference only: keep both looks — the grown-up (short dark bob, cornflower-blue shirt, mustard-yellow cable-knit sweater vest, walnut-brown trousers) and the child (short dark bob, mustard-yellow T-shirt, teal shorts) — and the flat print style; do not copy the sheet layout or poses"
+    }
+  ],
+  "scene": "a warm off-white wooden-free plain floor seen exactly from above; in the exact centre a large ROUND teal rug whose diameter is about 70% of the image height",
+  "subject": "on the rug, the grown-up protagonist and the small child sit back to back, both seen from directly above so only the tops of their heads, shoulders, knees and the guitars are visible; the grown-up holds an acoustic guitar, the child hugs a guitar almost as big as them. Around them, evenly spaced in a ring along the edge of the rug, small objects: four guitar chord cards (empty grids), a cassette tape, a pyramid metronome, two vinyl records, a blank application form with a rubber stamp, a magnifying glass, a handheld microphone with cable, a small stage spotlight, over-ear headphones, a sprig of baby's breath flowers",
+  "composition": "perfectly top-down and centred; the rug and everything on it must stay inside the central 75% of the image width (so a centred 4:3 crop keeps all of it); leave calm empty off-white floor in a band across the top (about 14% of the height) and a band across the bottom (about 12%) for title text, and plain floor at the far left and right",
+  "lighting": "flat even light, soft flat shadows",
+  "palette": "teal (#00838A) rug, mustard yellow (#FFB511), cornflower blue (#62A8E5), walnut brown (#925F52) and fluorescent pink (#FF48B0) accents on warm off-white paper (#F3ECDD)",
+  "extra_constraints": "both figures seen strictly from above: no faces, no eyes, nose or mouth"
+}

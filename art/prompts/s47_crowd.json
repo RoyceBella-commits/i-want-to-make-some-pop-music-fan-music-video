@@ -1,0 +1,16 @@
+{
+  "id": "s47_crowd",
+  "input_images": [
+    {
+      "path": "raw/s20_windows/s20_windows_v1.png",
+      "role": "reference for the family silhouettes only (the couple, and the grandparents with the small radio); keep their silhouettes and the flat print style; do not copy the composition"
+    }
+  ],
+  "primary_request": "The people who once watched from the windows are now in the audience: from the stage, the back rows include the middle-aged couple and the grandparents with a small radio.",
+  "scene": "a small live house audience seen from the stage: happy silhouettes in front with raised hands; in the back row the same family silhouettes as in Image 1 — the middle-aged couple side by side, the grandmother and the grandfather holding a small radio — standing calmly and smiling-in-pose (no faces)",
+  "subject": "the crowd and the family silhouettes in the back row",
+  "composition": "the family group in the upper-middle back row, clearly readable; calm area at the top for text",
+  "lighting": "warm stage spill light on the audience",
+  "palette": "all five inks: fluorescent pink (#FF48B0), mustard yellow (#FFB511), cornflower blue (#62A8E5), teal (#00838A), walnut brown (#925F52)",
+  "has_protagonist": false
+}

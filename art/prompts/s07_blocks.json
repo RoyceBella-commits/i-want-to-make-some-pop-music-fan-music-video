@@ -1,0 +1,15 @@
+{
+  "id": "s07_blocks",
+  "input_images": [
+    {
+      "path": "raw/charsheet/charsheet_v1.png",
+      "role": "character reference only: keep the protagonist's look (short dark bob that always hides the face, cornflower-blue shirt, mustard-yellow cable-knit sweater vest, walnut-brown trousers, teal sneakers; as a child: mustard-yellow T-shirt and teal shorts) and the flat print style; do not copy the sheet layout or poses"
+    }
+  ],
+  "primary_request": "Learning to enrich chords: the young adult stacks big colorful building blocks into a tall tower.",
+  "scene": "a bright studio room with a plain wall; a tower of five large plain building blocks of different colors stacked unevenly, about twice the height of a person",
+  "subject": "the same young adult from the reference, seen from behind on a small step ladder, lifting one more block onto the top of the tower",
+  "composition": "tall tower in the center-right; the blocks have large flat empty faces (for printed notes later); calm empty wall at the left for text",
+  "lighting": "flat bright light",
+  "palette": "fluorescent pink (#FF48B0), mustard yellow (#FFB511) and teal (#00838A) dominant, cornflower blue (#62A8E5) and walnut brown (#925F52) supporting"
+}

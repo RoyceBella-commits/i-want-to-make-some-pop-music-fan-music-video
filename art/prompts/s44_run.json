@@ -1,0 +1,19 @@
+{
+  "id": "s44_run",
+  "input_images": [
+    {
+      "path": "raw/charsheet/charsheet_v1.png",
+      "role": "character reference only: keep the protagonist's look (short dark bob that always hides the face, cornflower-blue shirt, mustard-yellow cable-knit sweater vest, walnut-brown trousers, teal sneakers; as a child: mustard-yellow T-shirt and teal shorts) and the flat print style; do not copy the sheet layout or poses"
+    },
+    {
+      "path": "raw/charsheet_friend/charsheet_friend_v1.png",
+      "role": "character reference only: keep the keyboardist friend's look (tall, short curly dark-brown hair, oversized fluorescent-pink sweater, teal wide trousers, face never visible) and the flat print style; do not copy the sheet layout"
+    }
+  ],
+  "primary_request": "Cherish the lucky aesthetic experiences, throw away the complaints: at dawn the protagonist runs down outdoor street stairs with a guitar case; the keyboardist friend runs ahead and turns back to wave.",
+  "scene": "a hillside city street with long outdoor stairs at sunrise; rooftops, power lines, the sky turning pink and yellow",
+  "subject": "the protagonist (Image 1) running down the stairs seen from behind with a guitar case; the keyboardist friend (Image 2) further down, turned away, waving one arm; no faces",
+  "composition": "the stairs as a strong diagonal; both figures in motion; sky area at the top for text",
+  "lighting": "sunrise glow",
+  "palette": "fluorescent pink (#FF48B0), mustard yellow (#FFB511) and cornflower blue (#62A8E5) dominant, teal (#00838A) and walnut brown (#925F52) shadows"
+}

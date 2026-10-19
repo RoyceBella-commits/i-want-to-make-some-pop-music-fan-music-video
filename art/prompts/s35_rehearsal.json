@@ -1,0 +1,19 @@
+{
+  "id": "s35_rehearsal",
+  "input_images": [
+    {
+      "path": "raw/charsheet/charsheet_v1.png",
+      "role": "character reference only: keep the protagonist's look (short dark bob that always hides the face, cornflower-blue shirt, mustard-yellow cable-knit sweater vest, walnut-brown trousers, teal sneakers; as a child: mustard-yellow T-shirt and teal shorts) and the flat print style; do not copy the sheet layout or poses"
+    },
+    {
+      "path": "raw/charsheet_friend/charsheet_friend_v1.png",
+      "role": "character reference only: keep the keyboardist friend's look (tall, short curly dark-brown hair, oversized fluorescent-pink sweater, teal wide trousers, face never visible) and the flat print style; do not copy the sheet layout"
+    }
+  ],
+  "primary_request": "All my relationships and connections: a rehearsal room where the protagonist, the keyboardist friend and a few friends sit together, connected by audio cables.",
+  "scene": "a warm rehearsal room: amps, a keyboard, guitars, a drum, a sofa, a rug; many audio cables run across the floor between instruments and people; on the wall a framed family photo showing people from behind",
+  "subject": "the protagonist (Image 1) sitting with a guitar, the keyboardist friend (Image 2) at the keyboard, and three other friends sitting on the sofa and floor; everyone seen from behind or turned away, no faces",
+  "composition": "wide shot; five people spread from left to right; the cables clearly visible on the floor; calm wall area at the top for text",
+  "lighting": "warm cozy light",
+  "palette": "mustard yellow (#FFB511), walnut brown (#925F52) and teal (#00838A), warm and gentle, small fluorescent pink (#FF48B0) accents"
+}

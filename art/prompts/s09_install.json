@@ -1,0 +1,15 @@
+{
+  "id": "s09_install",
+  "input_images": [
+    {
+      "path": "raw/charsheet/charsheet_v1.png",
+      "role": "character reference only: keep the protagonist's look (short dark bob that always hides the face, cornflower-blue shirt, mustard-yellow cable-knit sweater vest, walnut-brown trousers, teal sneakers; as a child: mustard-yellow T-shirt and teal shorts) and the flat print style; do not copy the sheet layout or poses"
+    }
+  ],
+  "primary_request": "Making art works: a gallery installation made of hanging speakers and cassette tapes; the young adult stands looking at it.",
+  "scene": "a white-walled gallery with a polished floor; from the ceiling hang dozens of small speakers and loose cassette tapes on strings, forming a cloud-like installation; a long cable runs across the floor",
+  "subject": "the same young adult from the reference, small, seen from behind standing under the installation, looking up",
+  "composition": "wide shot; installation fills the upper middle; the figure small at the lower center; calm empty wall area on the right for text",
+  "lighting": "soft gallery light, clean shadows",
+  "palette": "fluorescent pink (#FF48B0), mustard yellow (#FFB511) and teal (#00838A) dominant, cornflower blue (#62A8E5) and walnut brown (#925F52) supporting"
+}

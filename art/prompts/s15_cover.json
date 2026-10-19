@@ -1,0 +1,16 @@
+{
+  "id": "s15_cover",
+  "input_images": [
+    {
+      "path": "raw/charsheet/charsheet_v1.png",
+      "role": "character reference only: keep the protagonist's look (short dark bob that always hides the face, cornflower-blue shirt, mustard-yellow cable-knit sweater vest, walnut-brown trousers, teal sneakers; as a child: mustard-yellow T-shirt and teal shorts) and the flat print style; do not copy the sheet layout or poses"
+    }
+  ],
+  "primary_request": "Lying face-down on the carpet with an open book covering the head, secretly delighted.",
+  "scene": "a teal carpet with walnut wood panels at the top edge of the frame; books scattered around; a vase of baby's breath flowers in a corner; a floor lamp base",
+  "subject": "the same young adult from the reference lying face-down on the carpet with arms stretched out, an open hardcover book resting on the head and covering it completely",
+  "composition": "seen from above at a slight angle; the figure diagonal across the middle; calm empty carpet area in the upper-left for text",
+  "lighting": "warm soft light",
+  "palette": "walnut brown (#925F52) wood, teal (#00838A) carpet, mustard yellow (#FFB511) and cornflower blue (#62A8E5) clothes, small fluorescent pink (#FF48B0) accents",
+  "extra_avoid": "cats or animals"
+}

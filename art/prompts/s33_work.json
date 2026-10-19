@@ -1,0 +1,15 @@
+{
+  "id": "s33_work",
+  "input_images": [
+    {
+      "path": "raw/charsheet/charsheet_v1.png",
+      "role": "character reference only: keep the protagonist's look (short dark bob that always hides the face, cornflower-blue shirt, mustard-yellow cable-knit sweater vest, walnut-brown trousers, teal sneakers; as a child: mustard-yellow T-shirt and teal shorts) and the flat print style; do not copy the sheet layout or poses"
+    }
+  ],
+  "primary_request": "Starting to work hard and make things to fight anxiety: late night at the desk with a laptop music program, a microphone and many cups.",
+  "scene": "a desk by a window at night: a laptop showing a music-production screen made of colored blocks and waveforms (no text), a studio microphone, a small keyboard controller, many coffee cups and mugs accumulated, sticky notes (blank); the window shows a plain empty sky (one flat color, no clouds, so it can be recolored later)",
+  "subject": "the same young adult from the reference at the desk, seen from behind, wearing over-ear headphones",
+  "composition": "the window clearly visible in the upper-left; the figure center-right; calm wall area in the upper-right for text",
+  "lighting": "screen glow and a desk lamp",
+  "palette": "teal (#00838A) and cornflower blue (#62A8E5) dominant night, walnut brown (#925F52) furniture, small mustard-yellow (#FFB511) lamp light"
+}

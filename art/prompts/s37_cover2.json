@@ -1,0 +1,16 @@
+{
+  "id": "s37_cover2",
+  "input_images": [
+    {
+      "path": "raw/charsheet/charsheet_v1.png",
+      "role": "character reference only: keep the protagonist's look (short dark bob that always hides the face, cornflower-blue shirt, mustard-yellow cable-knit sweater vest, walnut-brown trousers, teal sneakers; as a child: mustard-yellow T-shirt and teal shorts) and the flat print style; do not copy the sheet layout or poses"
+    }
+  ],
+  "primary_request": "Again secretly delighted, but this time not alone: the protagonist lying face-down with a book over the head, while a friend's hands tidy up books nearby.",
+  "scene": "a teal carpet in front of walnut-wood wall panels; scattered books and records; a vase of baby's breath flowers; a floor lamp base",
+  "subject": "the same young adult from the reference lying face-down, an open book covering the head, one arm stretched out; at the left edge a friend's hands (dark sleeve) picking up a stack of books",
+  "composition": "seen from slightly above; the figure diagonal across the middle; calm carpet area in the upper-right for text",
+  "lighting": "warm soft light",
+  "palette": "walnut brown (#925F52) wood, teal (#00838A) carpet, mustard yellow (#FFB511) and cornflower blue (#62A8E5) clothes, small fluorescent pink (#FF48B0) accents",
+  "extra_avoid": "cats or animals"
+}

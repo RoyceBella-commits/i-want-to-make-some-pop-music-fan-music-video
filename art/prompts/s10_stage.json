@@ -1,0 +1,15 @@
+{
+  "id": "s10_stage",
+  "input_images": [
+    {
+      "path": "raw/charsheet/charsheet_v1.png",
+      "role": "character reference only: keep the protagonist's look (short dark bob that always hides the face, cornflower-blue shirt, mustard-yellow cable-knit sweater vest, walnut-brown trousers, teal sneakers; as a child: mustard-yellow T-shirt and teal shorts) and the flat print style; do not copy the sheet layout or poses"
+    }
+  ],
+  "primary_request": "Interactive theater and film: a small black-box theater that is also a film set; the young adult works behind a film camera.",
+  "scene": "a black-box theater stage with a single bright spotlight circle on the floor, a simple chair in the spotlight, a film camera on a tripod in the foreground, a blank clapperboard on the floor, cables, a boom microphone",
+  "subject": "the same young adult from the reference, seen from behind looking through the film camera toward the spotlight",
+  "composition": "the camera and the figure in the left foreground, the spotlight circle in the right middle ground; dark surroundings; calm dark upper area for text",
+  "lighting": "one strong spotlight, everything else dim",
+  "palette": "teal (#00838A) and walnut brown (#925F52) dark surroundings, mustard yellow (#FFB511) spotlight, fluorescent pink (#FF48B0) accents"
+}

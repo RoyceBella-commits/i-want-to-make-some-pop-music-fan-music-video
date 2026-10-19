@@ -1,0 +1,38 @@
+# ---- Copyrighted material: never commit ----------------------------------------------------
+# The song, anything decoded or separated from it, its lyrics and its cover art.
+*.flac
+*.wav
+*.mp3
+*.m4a
+*.aac
+*.lrc
+data/*
+!data/README.md
+# Full timeline with lyric text, restored locally by `npm run lyrics -- <song.flac>`
+story/public/data/timeline.json
+# Bundles embed timeline.json (and thus the lyrics)
+story/build/
+story/verify/.*.mjs
+
+# ---- Renders --------------------------------------------------------------------------------
+out/
+*.mp4
+*.mov
+
+# ---- Image-generation logs (session ids, local paths) ---------------------------------------
+art/raw/**/*.events.jsonl
+art/raw/**/*.result.md
+art/raw/**/*.task.txt
+art/raw/**/*.log.json
+art/raw/**/*.errors.log
+art/logs/
+# Regenerable by art/plates_all.py (the copies the MV uses live in story/public/plates)
+art/plates/
+
+# ---- Environments & caches ------------------------------------------------------------------
+node_modules/
+.venv/
+__pycache__/
+*.pyc
+.DS_Store
+._*

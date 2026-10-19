@@ -1,0 +1,15 @@
+{
+  "id": "s17_popstage",
+  "input_images": [
+    {
+      "path": "raw/charsheet/charsheet_v1.png",
+      "role": "character reference only: keep the protagonist's look (short dark bob that always hides the face, cornflower-blue shirt, mustard-yellow cable-knit sweater vest, walnut-brown trousers, teal sneakers; as a child: mustard-yellow T-shirt and teal shorts) and the flat print style; do not copy the sheet layout or poses"
+    }
+  ],
+  "primary_request": "Wanting to make pop music: an imagined candy-colored pop stage with confetti and a big empty marquee sign.",
+  "scene": "a glossy candy-colored pop stage: a big empty marquee sign frame with light bulbs around its border hanging above the stage (the inside of the sign is a clean flat empty panel), tall speaker stacks, confetti, star shapes, a glittering curtain",
+  "subject": "the same young adult from the reference standing on the stage, seen from behind, holding an acoustic guitar, facing an imagined crowd",
+  "composition": "the marquee sign large in the upper-middle (its empty inner panel about 55% of the frame width); the figure small-medium at the lower center",
+  "lighting": "bright pop stage lights",
+  "palette": "fluorescent pink (#FF48B0) and mustard yellow (#FFB511) dominant, cornflower blue (#62A8E5) accents, candy-like"
+}

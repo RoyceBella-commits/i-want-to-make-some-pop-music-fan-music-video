@@ -1,0 +1,15 @@
+{
+  "id": "s42_night",
+  "input_images": [
+    {
+      "path": "raw/charsheet/charsheet_v1.png",
+      "role": "character reference only: keep the protagonist's look (short dark bob that always hides the face, cornflower-blue shirt, mustard-yellow cable-knit sweater vest, walnut-brown trousers, teal sneakers; as a child: mustard-yellow T-shirt and teal shorts) and the flat print style; do not copy the sheet layout or poses"
+    }
+  ],
+  "primary_request": "Notes flow into my ears: night, the window is open, curtains blow inward, the protagonist sits listening.",
+  "scene": "a bedroom at night: a large open window on the left with curtains blowing inward, moon and stars outside, a bed, headphones on the bed, a guitar against the wall",
+  "subject": "the same young adult from the reference sitting on the edge of the bed, seen from behind, head tilted toward the window as if listening",
+  "composition": "window on the left, figure center-right; open air between the window and the figure (for flowing notes later); calm wall area in the upper-right for text",
+  "lighting": "moonlight and a small warm lamp",
+  "palette": "teal (#00838A) and cornflower blue (#62A8E5) dominant night, walnut brown (#925F52) furniture, small mustard-yellow (#FFB511) lamp light"
+}

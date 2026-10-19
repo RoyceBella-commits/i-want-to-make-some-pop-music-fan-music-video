@@ -1,0 +1,18 @@
+{
+  "id": "charsheet_friend",
+  "has_protagonist": false,
+  "asset_type": "character reference sheet for a narrative music video; used as a reference image for later keyframes",
+  "primary_request": "Character reference sheet of the protagonist's bandmate, a keyboardist friend, in the same flat print style, face never visible.",
+  "input_images": [
+    {
+      "path": "raw/charsheet/charsheet_v1.png",
+      "role": "character reference only: keep the protagonist's look (short dark bob that always hides the face, cornflower-blue shirt, mustard-yellow cable-knit sweater vest, walnut-brown trousers, teal sneakers; as a child: mustard-yellow T-shirt and teal shorts) and the flat print style; do not copy the sheet layout or poses"
+    }
+  ],
+  "scene": "plain warm off-white paper background, no environment",
+  "subject": "four full-body poses of one tall young adult (the keyboardist friend) in a single row, evenly spaced: (1) seen from behind, (2) side view with head turned away and curly hair hiding the face, (3) seen from behind playing a small synthesizer keyboard on a stand, (4) three-quarter back view running and waving one arm. The friend has short curly dark-brown hair, an oversized fluorescent-pink sweater, teal wide trousers and walnut-brown boots; the face is never visible (always from behind or turned away; no eyes, nose or mouth).",
+  "composition": "wide landscape layout, four figures in one row, generous margins",
+  "lighting": "flat even light, simple flat shadow shapes under the figures",
+  "palette": "fluorescent pink (#FF48B0), mustard yellow (#FFB511) and teal (#00838A) dominant, cornflower blue (#62A8E5) and walnut brown (#925F52) supporting",
+  "extra_constraints": "this is a reference sheet: no labels, no captions"
+}

@@ -1,0 +1,15 @@
+{
+  "id": "s34_mic",
+  "input_images": [
+    {
+      "path": "raw/charsheet/charsheet_v1.png",
+      "role": "character reference only: keep the protagonist's look (short dark bob that always hides the face, cornflower-blue shirt, mustard-yellow cable-knit sweater vest, walnut-brown trousers, teal sneakers; as a child: mustard-yellow T-shirt and teal shorts) and the flat print style; do not copy the sheet layout or poses"
+    }
+  ],
+  "primary_request": "Stubbornly singing out loud: a close shot of the protagonist gripping a microphone and singing with all their strength.",
+  "scene": "a simple plain background",
+  "subject": "the same young adult from the reference in a close shot from behind and slightly to the side, both hands gripping a handheld microphone raised close, body leaning forward; the hair hides the face completely",
+  "composition": "close-medium shot; the figure on the right half; large plain area on the left for big text",
+  "lighting": "strong side light",
+  "palette": "teal (#00838A), mustard yellow (#FFB511) and cornflower blue (#62A8E5), with fluorescent pink (#FF48B0) background shapes"
+}

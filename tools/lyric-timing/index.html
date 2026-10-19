@@ -1,0 +1,285 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>歌词逐字校对</title>
+<style>
+  :root { --bg:#0c0c0e; --panel:#141418; --line:#26262c; --ink:#f1eee7; --dim:#7b7a80; --acc:#ffb347; --warn:#ff8a3d; --ok:#3ddc97; --sel:#5c7cfa; }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink); font:14px/1.5 -apple-system, "PingFang SC", sans-serif; height:100vh; display:grid; grid-template-rows:auto 1fr auto; }
+  header { display:flex; gap:16px; align-items:center; padding:12px 16px; border-bottom:1px solid var(--line); flex-wrap:wrap; }
+  header h1 { font-size:15px; margin:0 8px 0 0; font-weight:600; }
+  button, select { background:var(--panel); color:var(--ink); border:1px solid var(--line); border-radius:6px; padding:5px 10px; font:inherit; cursor:pointer; }
+  button:hover { border-color:var(--dim); }
+  .mono { font-family: ui-monospace, "SF Mono", Menlo, monospace; }
+  #time { min-width: 92px; }
+  main { display:grid; grid-template-columns: 340px 1fr; min-height:0; }
+  #list { overflow:auto; border-right:1px solid var(--line); }
+  .row { display:grid; grid-template-columns: 34px 62px 1fr auto; gap:6px; padding:6px 10px; border-bottom:1px solid #18181c; cursor:pointer; align-items:center; }
+  .row:hover { background:#16161b; }
+  .row.cur { background:#1d1d25; }
+  .row .i, .row .ts { color:var(--dim); font-size:12px; }
+  .badge { font-size:11px; padding:1px 6px; border-radius:10px; }
+  .badge.flag { background:#3a2414; color:var(--warn); }
+  .badge.ok { background:#123024; color:var(--ok); }
+  .badge.edit { background:#1a2140; color:#9fb2ff; }
+  #stage { padding:28px 32px; overflow:auto; min-width:0; }
+  #big { font-size:52px; line-height:1.4; letter-spacing:0.02em; min-height:150px; }
+  #big span { display:inline-block; padding:0 2px; border-radius:6px; cursor:pointer; color:#4a4950; transition: color .04s; }
+  #big span.sung { color:var(--ink); }
+  #big span.now { color:var(--acc); text-shadow:0 0 18px rgba(255,179,71,.6); }
+  #big span.sel { outline:2px solid var(--sel); }
+  #big span.np { cursor:default; }
+  #lane { width:100%; height:120px; background:var(--panel); border:1px solid var(--line); border-radius:8px; margin-top:18px; display:block; }
+  #info { margin-top:14px; color:var(--dim); }
+  #info b { color:var(--ink); font-weight:600; }
+  .help { margin-top:22px; color:var(--dim); font-size:13px; display:grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap:4px 24px; max-width:760px; }
+  kbd { background:#1f1f25; border:1px solid #33333a; border-bottom-width:2px; border-radius:4px; padding:0 6px; font-size:12px; color:var(--ink); font-family: ui-monospace, Menlo, monospace; }
+  footer { padding:8px 16px; border-top:1px solid var(--line); color:var(--dim); display:flex; justify-content:space-between; }
+  label { display:flex; gap:6px; align-items:center; color:var(--dim); }
+  @media (max-width: 760px) { main { grid-template-columns: 1fr; } #list { max-height: 30vh; border-right:0; border-bottom:1px solid var(--line); } #big { font-size:34px; } .help { grid-template-columns: 1fr; } }
+</style>
+</head>
+<body>
+<header>
+  <h1>歌词逐字校对</h1>
+  <button id="play">▶ 播放</button>
+  <span id="time" class="mono">00:00.00</span>
+  <label>速度 <select id="rate"><option>0.5</option><option>0.75</option><option selected>1</option></select></label>
+  <label><input type="checkbox" id="follow" checked /> 跟随播放</label>
+  <label><input type="checkbox" id="loop" /> 循环当前句</label>
+  <button id="markok">✓ 本句已检查 (R)</button>
+</header>
+<main>
+  <div id="list"></div>
+  <div id="stage">
+    <div id="big"></div>
+    <canvas id="lane" height="120"></canvas>
+    <div id="info"></div>
+    <div class="help">
+      <div><kbd>空格</kbd> 播放 / 暂停</div>
+      <div><kbd>Enter</kbd> 从选中字前 1 秒开始播</div>
+      <div><kbd>←</kbd><kbd>→</kbd> 选上一个 / 下一个字</div>
+      <div><kbd>↑</kbd><kbd>↓</kbd> 上一句 / 下一句</div>
+      <div><kbd>[</kbd><kbd>]</kbd> 选中字提前 / 推后 10ms（按住 Shift 为 50ms）</div>
+      <div><kbd>T</kbd> 播放中把选中字"拍"到当前时间，并跳到下一个字</div>
+      <div><kbd>R</kbd> 标记本句已检查</div>
+      <div><kbd>U</kbd> 撤销选中字的修改</div>
+      <div>拖动下方时间条里色块的左边缘也可以调整起点</div>
+    </div>
+  </div>
+</main>
+<footer><span id="status">加载中…</span><span class="mono" id="stats"></span></footer>
+<audio id="audio" src="/audio.wav" preload="auto"></audio>
+<script>
+const $ = (id) => document.getElementById(id);
+const audio = $('audio');
+let TL, lines, ov = {tokens: {}, reviewed: []}, curLine = 0, sel = null, saveTimer = null;
+
+const fmt = (t) => { const m = Math.floor(t / 60); return `${String(m).padStart(2, '0')}:${(t - m * 60).toFixed(2).padStart(5, '0')}`; };
+const key = (li, ti) => `${lines[li].i}:${ti}`;
+const sung = (li) => lines[li].tokens.map((tk, ti) => ({tk, ti})).filter((x) => x.tk.s !== undefined);
+const tStart = (li, ti) => ov.tokens[key(li, ti)]?.s ?? lines[li].tokens[ti].s;
+const tEnd = (li, ti) => ov.tokens[key(li, ti)]?.e ?? lines[li].tokens[ti].e;
+const lineStart = (li) => Math.min(...sung(li).map((x) => tStart(li, x.ti)));
+const lineEnd = (li) => Math.max(...sung(li).map((x) => tEnd(li, x.ti)));
+const edited = (li) => sung(li).some((x) => ov.tokens[key(li, x.ti)]);
+
+function flagged(li) {
+  const L = lines[li];
+  const s = sung(li).map((x) => tStart(li, x.ti));
+  let cram = 0;
+  for (let k = 1; k < s.length; k++) if (s[k] - s[k - 1] < 0.07) cram++;
+  return Math.abs(s[0] - L.lrc) > 0.6 || cram >= 2;
+}
+
+function renderList() {
+  $('list').innerHTML = lines.map((L, li) => {
+    const b = ov.reviewed.includes(L.i) ? '<span class="badge ok">已查</span>'
+      : edited(li) ? '<span class="badge edit">已改</span>'
+      : flagged(li) ? '<span class="badge flag">重点</span>' : '';
+    return `<div class="row ${li === curLine ? 'cur' : ''}" data-li="${li}"><span class="i mono">${L.i}</span><span class="ts mono">${fmt(lineStart(li))}</span><span>${L.text}</span>${b}</div>`;
+  }).join('');
+  const done = ov.reviewed.length, fl = lines.filter((_, li) => flagged(li)).length;
+  $('stats').textContent = `已检查 ${done}/${lines.length} · 重点句 ${fl} · 修改 ${Object.keys(ov.tokens).length} 处`;
+}
+
+function renderBig() {
+  const t = audio.currentTime;
+  const L = lines[curLine];
+  $('big').innerHTML = L.tokens.map((tk, ti) => {
+    if (tk.s === undefined) return `<span class="np sung">${tk.t === ' ' ? '&nbsp;' : tk.t}</span>`;
+    const s = tStart(curLine, ti), e = tEnd(curLine, ti);
+    const cls = [t >= s && t <= e ? 'now' : t > e ? 'sung' : '', sel && sel.li === curLine && sel.ti === ti ? 'sel' : ''].join(' ');
+    return `<span class="${cls}" data-ti="${ti}">${tk.t}</span>`;
+  }).join('');
+  if (sel && sel.li === curLine) {
+    const tk = L.tokens[sel.ti];
+    const o = ov.tokens[key(sel.li, sel.ti)];
+    $('info').innerHTML = `选中 <b>${tk.t}</b> · 起点 <b class="mono">${fmt(tStart(sel.li, sel.ti))}</b> · 结束 <span class="mono">${fmt(tEnd(sel.li, sel.ti))}</span>` +
+      (o ? ` · 自动对齐原值 <span class="mono">${fmt(tk.s)}</span>（已改 ${((o.s - tk.s) * 1000).toFixed(0)}ms）` : '') +
+      ` · LRC 句首 <span class="mono">${fmt(L.lrc)}</span>`;
+  } else {
+    $('info').innerHTML = `第 ${L.i} 句 · ${fmt(lineStart(curLine))} – ${fmt(lineEnd(curLine))} · 点击一个字选中它`;
+  }
+}
+
+let laneView = null;
+function renderLane() {
+  const cv = $('lane');
+  const w = cv.clientWidth, h = 120, dpr = window.devicePixelRatio || 1;
+  if (cv.width !== w * dpr) { cv.width = w * dpr; cv.height = h * dpr; }
+  const g = cv.getContext('2d');
+  g.setTransform(dpr, 0, 0, dpr, 0, 0);
+  g.clearRect(0, 0, w, h);
+  const a = lineStart(curLine) - 0.6, b = lineEnd(curLine) + 0.6;
+  laneView = {a, b, w};
+  const X = (t) => ((t - a) / (b - a)) * w;
+  // beat grid
+  const {period: P, first_downbeat: F} = TL.grid;
+  for (let k = Math.ceil((a - F) / P); F + k * P < b; k++) {
+    const x = X(F + k * P);
+    g.fillStyle = k % 4 === 0 ? '#3a3a44' : '#22222a';
+    g.fillRect(x, 0, k % 4 === 0 ? 2 : 1, h);
+  }
+  // LRC marker
+  g.fillStyle = '#ff8a3d'; g.fillRect(X(lines[curLine].lrc), 0, 2, 14);
+  g.font = '11px ui-monospace, Menlo'; g.fillText('LRC', X(lines[curLine].lrc) + 4, 11);
+  // char blocks
+  g.font = '20px -apple-system, "PingFang SC"';
+  for (const {tk, ti} of sung(curLine)) {
+    const s = tStart(curLine, ti), e = tEnd(curLine, ti);
+    const isSel = sel && sel.li === curLine && sel.ti === ti;
+    g.fillStyle = isSel ? 'rgba(92,124,250,.45)' : ov.tokens[key(curLine, ti)] ? 'rgba(159,178,255,.22)' : 'rgba(255,179,71,.2)';
+    g.fillRect(X(s), 34, Math.max(3, X(e) - X(s)), 64);
+    g.fillStyle = isSel ? '#9fb2ff' : '#ffb347';
+    g.fillRect(X(s), 30, 3, 72);
+    g.fillStyle = '#f1eee7';
+    g.fillText(tk.t, X(s) + 6, 76);
+  }
+  const t = audio.currentTime;
+  if (t >= a && t <= b) { g.fillStyle = '#fff'; g.fillRect(X(t), 0, 1.5, h); }
+}
+
+function selectLine(li, keepSel = false) {
+  curLine = Math.max(0, Math.min(lines.length - 1, li));
+  if (!keepSel) sel = {li: curLine, ti: sung(curLine)[0].ti};
+  renderList(); renderBig(); renderLane();
+  document.querySelector(`.row[data-li="${curLine}"]`)?.scrollIntoView({block: 'nearest'});
+}
+
+function setStart(li, ti, s) {
+  const tk = lines[li].tokens[ti];
+  const k = key(li, ti);
+  const e = Math.max(tEnd(li, ti), s + 0.04);
+  ov.tokens[k] = {s: +s.toFixed(3), e: +e.toFixed(3)};
+  // keep the previous unit's end from overlapping
+  const list = sung(li); const idx = list.findIndex((x) => x.ti === ti);
+  if (idx > 0) {
+    const p = list[idx - 1].ti;
+    if (tEnd(li, p) > s) ov.tokens[key(li, p)] = {s: tStart(li, p), e: +s.toFixed(3)};
+  }
+  if (Math.abs(ov.tokens[k].s - tk.s) < 0.0005 && Math.abs(ov.tokens[k].e - tk.e) < 0.0005) delete ov.tokens[k];
+  queueSave(); renderList(); renderBig(); renderLane();
+}
+
+function queueSave() {
+  $('status').textContent = '保存中…';
+  clearTimeout(saveTimer);
+  saveTimer = setTimeout(async () => {
+    const r = await fetch('/overrides', {method: 'POST', headers: {'Content-Type': 'application/json'}, body: JSON.stringify(ov)});
+    $('status').textContent = r.ok ? `已自动保存 · ${new Date().toLocaleTimeString()}` : '保存失败';
+  }, 300);
+}
+
+function moveSel(d) {
+  const list = sung(curLine);
+  let idx = list.findIndex((x) => sel && sel.ti === x.ti) + d;
+  if (idx < 0) { if (curLine > 0) { selectLine(curLine - 1); const l = sung(curLine); sel = {li: curLine, ti: l[l.length - 1].ti}; } }
+  else if (idx >= list.length) { if (curLine < lines.length - 1) selectLine(curLine + 1); }
+  else sel = {li: curLine, ti: list[idx].ti};
+  renderBig(); renderLane();
+}
+
+function tick() {
+  const t = audio.currentTime;
+  $('time').textContent = fmt(t);
+  if (!audio.paused) {
+    if ($('loop').checked && t > lineEnd(curLine) + 0.5) audio.currentTime = lineStart(curLine) - 0.8;
+    else if ($('follow').checked) {
+      let li = 0;
+      for (let k = 0; k < lines.length; k++) if (lineStart(k) - 0.3 <= t) li = k;
+      if (li !== curLine) selectLine(li);
+    }
+  }
+  renderBig(); renderLane();
+  requestAnimationFrame(tick);
+}
+
+$('play').onclick = () => (audio.paused ? audio.play() : audio.pause());
+audio.onplay = () => ($('play').textContent = '❚❚ 暂停');
+audio.onpause = () => ($('play').textContent = '▶ 播放');
+$('rate').onchange = (e) => (audio.playbackRate = +e.target.value);
+$('markok').onclick = () => toggleReviewed();
+function toggleReviewed() {
+  const id = lines[curLine].i;
+  ov.reviewed = ov.reviewed.includes(id) ? ov.reviewed.filter((x) => x !== id) : [...ov.reviewed, id];
+  queueSave(); renderList();
+}
+$('list').onclick = (e) => {
+  const r = e.target.closest('.row'); if (!r) return;
+  selectLine(+r.dataset.li);
+  audio.currentTime = Math.max(0, lineStart(curLine) - 0.8);
+};
+$('big').onclick = (e) => {
+  const s = e.target.closest('span[data-ti]'); if (!s) return;
+  sel = {li: curLine, ti: +s.dataset.ti};
+  renderBig(); renderLane();
+};
+let drag = null;
+$('lane').onmousedown = (e) => {
+  if (!laneView) return;
+  const r = e.target.getBoundingClientRect();
+  const tt = laneView.a + ((e.clientX - r.left) / laneView.w) * (laneView.b - laneView.a);
+  let best = null, bd = 1e9;
+  for (const {ti} of sung(curLine)) { const d = Math.abs(tStart(curLine, ti) - tt); if (d < bd) { bd = d; best = ti; } }
+  if (best !== null && bd < 0.15) { sel = {li: curLine, ti: best}; drag = {ti: best}; $('follow').checked = false; }
+  else { audio.currentTime = tt; }
+  renderBig(); renderLane();
+};
+window.onmousemove = (e) => {
+  if (!drag || !laneView) return;
+  const r = $('lane').getBoundingClientRect();
+  const tt = laneView.a + ((e.clientX - r.left) / laneView.w) * (laneView.b - laneView.a);
+  setStart(curLine, drag.ti, tt);
+};
+window.onmouseup = () => (drag = null);
+window.onkeydown = (e) => {
+  if (e.target.tagName === 'SELECT') return;
+  const step = e.shiftKey ? 0.05 : 0.01;
+  if (e.code === 'Space') { e.preventDefault(); audio.paused ? audio.play() : audio.pause(); }
+  else if (e.key === 'ArrowLeft') { e.preventDefault(); moveSel(-1); }
+  else if (e.key === 'ArrowRight') { e.preventDefault(); moveSel(1); }
+  else if (e.key === 'ArrowUp') { e.preventDefault(); selectLine(curLine - 1); }
+  else if (e.key === 'ArrowDown') { e.preventDefault(); selectLine(curLine + 1); }
+  else if (e.key === '[' || e.key === '{') { if (sel) setStart(sel.li, sel.ti, tStart(sel.li, sel.ti) - step); }
+  else if (e.key === ']' || e.key === '}') { if (sel) setStart(sel.li, sel.ti, tStart(sel.li, sel.ti) + step); }
+  else if (e.key === 'Enter') { if (sel) { audio.currentTime = Math.max(0, tStart(sel.li, sel.ti) - 1); audio.play(); } }
+  else if (e.key.toLowerCase() === 't') { if (sel && !audio.paused) { setStart(sel.li, sel.ti, audio.currentTime - 0.03); moveSel(1); } }
+  else if (e.key.toLowerCase() === 'r') toggleReviewed();
+  else if (e.key.toLowerCase() === 'u') { if (sel) { delete ov.tokens[key(sel.li, sel.ti)]; queueSave(); renderList(); } }
+};
+
+(async () => {
+  TL = await (await fetch('/timeline.json')).json();
+  lines = TL.lines;
+  ov = await (await fetch('/overrides')).json();
+  ov.tokens ??= {}; ov.reviewed ??= [];
+  $('status').textContent = '就绪 · 修改会自动保存';
+  selectLine(0);
+  requestAnimationFrame(tick);
+})();
+</script>
+</body>
+</html>

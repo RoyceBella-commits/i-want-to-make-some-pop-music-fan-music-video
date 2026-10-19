@@ -1,0 +1,15 @@
+{
+  "id": "s49_split",
+  "input_images": [
+    {
+      "path": "raw/charsheet/charsheet_v1.png",
+      "role": "character reference only: keep the protagonist's look (short dark bob that always hides the face, cornflower-blue shirt, mustard-yellow cable-knit sweater vest, walnut-brown trousers, teal sneakers; as a child: mustard-yellow T-shirt and teal shorts) and the flat print style; do not copy the sheet layout or poses"
+    }
+  ],
+  "primary_request": "I also want to make some unpopular music: a stage split down the middle — clean pop on the left, noise experiments on the right — the protagonist stands on the dividing line.",
+  "scene": "a stage divided vertically in the middle: the left half is neat and glossy pop (pink lights, tidy mic stand, sparkles); the right half is a noise experiment (tangled cables, tape loops hanging, scattered effect pedals, contact microphones, a feedback amp)",
+  "subject": "the same young adult from the reference standing exactly on the dividing line, seen from behind, holding an electric guitar",
+  "composition": "symmetrical split; the figure in the center",
+  "lighting": "pink light on the left, uneven flickering light on the right",
+  "palette": "all five inks: fluorescent pink (#FF48B0), mustard yellow (#FFB511), cornflower blue (#62A8E5), teal (#00838A), walnut brown (#925F52)"
+}

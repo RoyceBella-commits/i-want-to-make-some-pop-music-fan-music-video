@@ -1,0 +1,15 @@
+{
+  "id": "s03_chords",
+  "input_images": [
+    {
+      "path": "raw/charsheet/charsheet_v1.png",
+      "role": "character reference only: keep the protagonist's look (short dark bob that always hides the face, cornflower-blue shirt, mustard-yellow cable-knit sweater vest, walnut-brown trousers, teal sneakers; as a child: mustard-yellow T-shirt and teal shorts) and the flat print style; do not copy the sheet layout or poses"
+    }
+  ],
+  "primary_request": "The teenager is fed up with ordinary expression and with repeating the same four chords.",
+  "scene": "the corner of a teenager's bedroom: a desk against a plain wall; pinned to the wall above the desk in one neat horizontal row are four identical blank cards, each showing an empty guitar chord grid (6 vertical lines, 5 horizontal lines, no dots, no letters); a desk lamp, a guitar leaning on the desk",
+  "subject": "the same teenager from the reference sitting at the desk, seen from behind, slumped with chin on folded arms, staring at the four cards",
+  "composition": "medium-wide shot from behind; the row of four cards is large and clearly visible in the upper middle; calm empty wall in the upper-left area for lyric text",
+  "lighting": "flat dull afternoon light, slightly bored mood",
+  "palette": "teal (#00838A), cornflower blue (#62A8E5) and walnut brown (#925F52) dominant, mustard yellow (#FFB511) accents, no pink"
+}

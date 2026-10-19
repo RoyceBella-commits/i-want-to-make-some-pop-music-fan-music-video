@@ -1,0 +1,15 @@
+{
+  "id": "s20_windows",
+  "input_images": [
+    {
+      "path": "raw/charsheet/charsheet_v1.png",
+      "role": "character reference only: keep the protagonist's look (short dark bob that always hides the face, cornflower-blue shirt, mustard-yellow cable-knit sweater vest, walnut-brown trousers, teal sneakers; as a child: mustard-yellow T-shirt and teal shorts) and the flat print style; do not copy the sheet layout or poses"
+    }
+  ],
+  "primary_request": "Being watched: at night the apartment building across the street has a grid of windows, and in them are the silhouettes of the people who watch and wait.",
+  "scene": "night; the facade of an old apartment building fills most of the frame with a grid of 4 columns × 3 rows of windows; inside the windows, flat silhouettes: a middle-aged couple standing side by side; an elderly grandmother in a rocking chair and a grandfather holding a small radio; two young people holding glowing phones; two silhouettes with crossed arms; the remaining windows empty; in the lower foreground, the inside edge of the protagonist's own lit window with the protagonist seen from behind sitting at a desk",
+  "subject": "silhouettes only — flat shapes with no faces at all; the protagonist from behind",
+  "composition": "the window grid is regular and clearly separated so each window can be lit separately later; foreground window frame at the bottom; calm dark wall area at the top for text",
+  "lighting": "dark night; the protagonist's lamp warm in the foreground",
+  "palette": "teal (#00838A) and walnut brown (#925F52) dominant, cool night mood, small mustard-yellow (#FFB511) window light"
+}

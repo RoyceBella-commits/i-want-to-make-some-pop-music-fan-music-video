@@ -1,0 +1,19 @@
+{
+  "id": "s45_walls",
+  "input_images": [
+    {
+      "path": "raw/charsheet/charsheet_v1.png",
+      "role": "character reference only: keep the protagonist's look (short dark bob that always hides the face, cornflower-blue shirt, mustard-yellow cable-knit sweater vest, walnut-brown trousers, teal sneakers; as a child: mustard-yellow T-shirt and teal shorts) and the flat print style; do not copy the sheet layout or poses"
+    },
+    {
+      "path": "raw/charsheet_friend/charsheet_friend_v1.png",
+      "role": "character reference only: keep the keyboardist friend's look (tall, short curly dark-brown hair, oversized fluorescent-pink sweater, teal wide trousers, face never visible) and the flat print style; do not copy the sheet layout"
+    }
+  ],
+  "primary_request": "We no longer need to hold back: surreal — the four walls of the bedroom fall outward like a cardboard box opening, revealing a stage with lights all around.",
+  "scene": "a small bedroom whose four walls are falling outward like the flaps of an opening box; beyond the falling walls a ring of stage lights, speaker stacks and a cheering crowd silhouette",
+  "subject": "the protagonist (Image 1) with a guitar and the keyboardist friend (Image 2) with a keyboard standing in the middle of the room's floor, both seen from behind",
+  "composition": "symmetrical; the falling walls frame the center; the duo in the middle",
+  "lighting": "stage lights bursting in",
+  "palette": "all five inks: fluorescent pink (#FF48B0), mustard yellow (#FFB511), cornflower blue (#62A8E5), teal (#00838A), walnut brown (#925F52)"
+}

@@ -1,0 +1,16 @@
+{
+  "id": "s14_hands",
+  "has_protagonist": false,
+  "input_images": [
+    {
+      "path": "raw/charsheet/charsheet_v1.png",
+      "role": "character reference only: keep the protagonist's look (short dark bob that always hides the face, cornflower-blue shirt, mustard-yellow cable-knit sweater vest, walnut-brown trousers, teal sneakers; as a child: mustard-yellow T-shirt and teal shorts) and the flat print style; do not copy the sheet layout or poses"
+    }
+  ],
+  "primary_request": "Surreal: the whole small room is held up from below by several pairs of family members' hands — everything is based on the family's effort and luck.",
+  "scene": "the small room from before (walnut panels, teal carpet, record player, guitar) shown as a tiny open-front diorama box; it rests on and is lifted by several pairs of adult hands coming from below: a mother's hands, a father's larger hands, and two pairs of older wrinkled grandparents' hands with a bracelet and a watch",
+  "subject": "the hands and the tiny box room; inside the box a tiny figure of the protagonist from the reference (mustard-yellow cable-knit sweater vest, light-blue shirt, brown trousers) lies FACE-DOWN on the teal carpet with an open book covering the head, so no face is visible at all",
+  "composition": "the box in the upper-middle, the hands spreading out below and toward the bottom edges; plenty of plain background around, so the camera can start close on the box and pull back to reveal the hands",
+  "lighting": "soft warm light from above",
+  "palette": "walnut brown (#925F52) wood, teal (#00838A) carpet, mustard yellow (#FFB511) and cornflower blue (#62A8E5) clothes, small fluorescent pink (#FF48B0) accents"
+}

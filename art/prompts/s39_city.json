@@ -1,0 +1,15 @@
+{
+  "id": "s39_city",
+  "input_images": [
+    {
+      "path": "raw/charsheet/charsheet_v1.png",
+      "role": "character reference only: keep the protagonist's look (short dark bob that always hides the face, cornflower-blue shirt, mustard-yellow cable-knit sweater vest, walnut-brown trousers, teal sneakers; as a child: mustard-yellow T-shirt and teal shorts) and the flat print style; do not copy the sheet layout or poses"
+    }
+  ],
+  "primary_request": "Topics nobody cares about: a crowded street of identical people with identical headphones and blank billboards; the protagonist walks against the flow with a guitar case.",
+  "scene": "a city street with tall buildings and three big blank billboards (clean flat empty panels); a crowd of identical people all wearing the same headphones, walking in one direction; colorful shop awnings and potted flowers along the street",
+  "subject": "the same young adult from the reference walking against the crowd, seen from behind, guitar case on the back, in the center",
+  "composition": "the protagonist center; billboards large in the upper half (for printed text later); the crowd fills the lower half",
+  "lighting": "flat daylight",
+  "palette": "all five inks: fluorescent pink (#FF48B0), mustard yellow (#FFB511), cornflower blue (#62A8E5), teal (#00838A), walnut brown (#925F52)"
+}

@@ -1,0 +1,19 @@
+{
+  "id": "s11_band",
+  "input_images": [
+    {
+      "path": "raw/charsheet/charsheet_v1.png",
+      "role": "character reference only: keep the protagonist's look (short dark bob that always hides the face, cornflower-blue shirt, mustard-yellow cable-knit sweater vest, walnut-brown trousers, teal sneakers; as a child: mustard-yellow T-shirt and teal shorts) and the flat print style; do not copy the sheet layout or poses"
+    },
+    {
+      "path": "raw/charsheet_friend/charsheet_friend_v1.png",
+      "role": "character reference only: keep the keyboardist friend's look (tall, short curly dark-brown hair, oversized fluorescent-pink sweater, teal wide trousers, face never visible) and the flat print style; do not copy the sheet layout"
+    }
+  ],
+  "primary_request": "Forming a band and making some noise in a basement rehearsal room; the keyboardist friend appears for the first time.",
+  "scene": "a cramped basement rehearsal room: guitar amplifier, a small drum kit, a synthesizer keyboard on a stand, the floor covered with many guitar effect pedals connected by tangled cables, a rug, a bare light bulb",
+  "subject": "the protagonist (from Image 1) seen from behind playing an electric guitar on the left; the keyboardist friend (from Image 2) seen from behind-side playing the synthesizer on the right; both faces never visible",
+  "composition": "wide shot; the pedals and cables fill the foreground floor; both figures in the middle ground; calm empty wall area at the top-left for text",
+  "lighting": "warm bare-bulb light, energetic",
+  "palette": "fluorescent pink (#FF48B0), mustard yellow (#FFB511) and teal (#00838A) dominant, cornflower blue (#62A8E5) and walnut brown (#925F52) supporting"
+}

@@ -1,0 +1,12 @@
+{
+  "id": "s02_teen",
+  "primary_request": "A few years later: a teenager practices guitar every day in a small bedroom, rain or shine, surrounded by records.",
+  "input_images": [
+    {"path": "raw/charsheet/charsheet_v1.png", "role": "character reference only: keep the teenager's look (pose 2: short dark bob covering the face, cornflower-blue shirt, mustard-yellow cable-knit sweater vest, walnut-brown trousers) and the flat print style; do not copy the sheet layout or the other poses"}
+  ],
+  "scene": "a teenager's small bedroom: on the left wall a large window with a completely plain, empty sky (one flat light color, no clouds, no buildings, so it can be recolored later); along the back wall a tall shelf filled with rows of vinyl records and CDs (spines only, no writing); a desk on the right with big over-ear headphones, a stack of music theory books and a classic pyramid-shaped mechanical metronome standing clearly visible on the desk; a single bed with a plain cover",
+  "subject": "the same person from the reference as a teenager (about 15), sitting on the edge of the bed in the center-left, seen from the side with the head bowed toward the fretboard so the dark bob hair hides the face, playing an acoustic guitar",
+  "composition": "wide interior shot, straight-on; the window fully visible on the left third, the teenager in the center-left, the metronome on the desk at the right; the upper-right wall area above the desk is calm and empty for lyric text; clear foreground / middle / background layers for parallax",
+  "lighting": "neutral daylight coming from the window, simple flat shadow shapes",
+  "palette": "mainly teal (#00838A), cornflower blue (#62A8E5) and mustard yellow (#FFB511) on warm off-white paper (#F3ECDD), walnut brown (#925F52) for wood; a few small fluorescent pink (#FF48B0) accents on record sleeves; no other hues"
+}

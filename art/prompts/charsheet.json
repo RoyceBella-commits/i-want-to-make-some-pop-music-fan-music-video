@@ -1,0 +1,10 @@
+{
+  "id": "charsheet",
+  "asset_type": "character reference sheet for a narrative music video; used as a reference image for every later keyframe",
+  "primary_request": "Character reference sheet of the same faceless protagonist at three ages, so later illustrations can keep the character consistent.",
+  "scene": "plain warm off-white paper background, no environment",
+  "subject": "five full-body poses of one person arranged in a single row with even spacing, all the same simple flat style: (1) a small child about 8 years old in a mustard-yellow T-shirt and teal shorts, seen from behind, holding an acoustic guitar almost as big as them; (2) a teenager about 15 in a cornflower-blue shirt with a mustard-yellow cable-knit sweater vest and walnut-brown trousers, seen from the side with the head bowed so the bob hair covers the face, holding a guitar; (3) a young adult about 22 in the same light-blue shirt and mustard-yellow cable-knit sweater vest, seen from behind, a guitar case on the back; (4) the same young adult seen from a three-quarter back view, standing with hands in pockets; (5) the same young adult lying face-down on the floor with an open book covering the head. Consistent proportions, same short dark bob haircut at every age.",
+  "composition": "wide landscape layout, five figures in one row, generous empty margin, figures roughly the same height except the child",
+  "lighting": "flat even light, no cast shadows except simple flat shadow shapes under the figures",
+  "extra_constraints": "this is a reference sheet: no labels, no captions, no turnaround arrows"
+}

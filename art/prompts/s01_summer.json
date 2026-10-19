@@ -1,0 +1,12 @@
+{
+  "id": "s01_summer",
+  "primary_request": "Opening shot: a hot summer afternoon long ago; a small child sits on the floor of an old apartment and holds a guitar for the first time.",
+  "input_images": [
+    {"path": "raw/charsheet/charsheet_v1.png", "role": "character reference only: keep the child's look (pose 1: short dark bob, mustard-yellow T-shirt, teal shorts) and the flat print style; do not copy the sheet layout or the other poses"}
+  ],
+  "scene": "an old apartment living room on a hot summer afternoon: a large open window on the right with strong sunlight and a plain bright sky, thin curtains, a standing electric fan, a woven straw floor mat, a potted plant, a low wooden cabinet with a small old radio on it; long flat shapes of sunlight on the floor",
+  "subject": "the same small child (about 8 years old) from the reference, sitting cross-legged on the straw mat in the lower-right part of the frame, seen from a three-quarter back view, hugging an acoustic guitar that is almost as big as them; the guitar's round sound hole and strings are clearly visible over the child's shoulder",
+  "composition": "wide interior shot from slightly above, eye level of an adult sitting; the child and guitar in the lower-right third; the upper-left area is a calm, empty pale wall (about 35% of the frame) reserved for lyric text; clear separation between foreground (fan, plant), middle ground (child), and background (wall, window) for a parallax effect",
+  "lighting": "bright, hazy, nostalgic summer light; warm mustard-yellow sunlight shapes, cool cornflower-blue shadows",
+  "palette": "mostly mustard yellow (#FFB511) and cornflower blue (#62A8E5) on warm off-white paper (#F3ECDD), with small accents of teal (#00838A) and walnut brown (#925F52); no pink in this scene; no other hues"
+}

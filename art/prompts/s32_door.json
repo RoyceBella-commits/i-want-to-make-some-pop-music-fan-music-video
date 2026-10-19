@@ -1,0 +1,15 @@
+{
+  "id": "s32_door",
+  "input_images": [
+    {
+      "path": "raw/charsheet/charsheet_v1.png",
+      "role": "character reference only: keep the protagonist's look (short dark bob that always hides the face, cornflower-blue shirt, mustard-yellow cable-knit sweater vest, walnut-brown trousers, teal sneakers; as a child: mustard-yellow T-shirt and teal shorts) and the flat print style; do not copy the sheet layout or poses"
+    }
+  ],
+  "primary_request": "Late at night, seeing how hard mother works: a dim apartment entrance with worn work shoes and a work bag just put down; the protagonist watches from a half-open door.",
+  "scene": "a narrow apartment entrance hall at night: a pair of worn work shoes just taken off, a work bag set down on a stool, keys on a hook, a hallway light on; on the wall the long soft shadow of an adult walking away down the hall (only the shadow)",
+  "subject": "in the foreground the edge of a half-open bedroom door and the back of the protagonist's head peeking out (from behind)",
+  "composition": "the shoes and bag in the middle ground center; the door edge and the back of the head on the right foreground; calm dark wall in the upper-left for text",
+  "lighting": "a single warm hallway light, quiet and tender",
+  "palette": "teal (#00838A) and walnut brown (#925F52), a little mustard yellow (#FFB511) light, muted"
+}

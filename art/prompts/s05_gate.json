@@ -1,0 +1,15 @@
+{
+  "id": "s05_gate",
+  "input_images": [
+    {
+      "path": "raw/charsheet/charsheet_v1.png",
+      "role": "character reference only: keep the protagonist's look (short dark bob that always hides the face, cornflower-blue shirt, mustard-yellow cable-knit sweater vest, walnut-brown trousers, teal sneakers; as a child: mustard-yellow T-shirt and teal shorts) and the flat print style; do not copy the sheet layout or poses"
+    }
+  ],
+  "primary_request": "The young adult pushes open the door of the art school and bright light floods in — they start looking forward to tomorrow.",
+  "scene": "a tall old double door being pushed open from the inside of a dim corridor; beyond the door a sunny art-school courtyard with a few abstract sculptures, potted trees and colorful posters (posters show only shapes, no text)",
+  "subject": "the same young adult from the reference, seen from behind in the doorway with a guitar case on the back, one hand pushing the door",
+  "composition": "symmetrical, the doorway in the center, the figure small-medium in the lower middle; strong contrast between the dark corridor (foreground) and the bright courtyard (background); empty bright sky area at the top for text",
+  "lighting": "strong bright light pouring through the door, long flat shadow toward the viewer",
+  "palette": "fluorescent pink (#FF48B0), mustard yellow (#FFB511) and teal (#00838A) dominant, cornflower blue (#62A8E5) and walnut brown (#925F52) supporting"
+}

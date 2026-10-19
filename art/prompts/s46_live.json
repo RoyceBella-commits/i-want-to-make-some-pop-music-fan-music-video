@@ -1,0 +1,19 @@
+{
+  "id": "s46_live",
+  "input_images": [
+    {
+      "path": "raw/charsheet/charsheet_v1.png",
+      "role": "character reference only: keep the protagonist's look (short dark bob that always hides the face, cornflower-blue shirt, mustard-yellow cable-knit sweater vest, walnut-brown trousers, teal sneakers; as a child: mustard-yellow T-shirt and teal shorts) and the flat print style; do not copy the sheet layout or poses"
+    },
+    {
+      "path": "raw/charsheet_friend/charsheet_friend_v1.png",
+      "role": "character reference only: keep the keyboardist friend's look (tall, short curly dark-brown hair, oversized fluorescent-pink sweater, teal wide trousers, face never visible) and the flat print style; do not copy the sheet layout"
+    }
+  ],
+  "primary_request": "I want to make some pop music, and hope everyone is a little happier: a small live house concert seen from behind the duo on stage.",
+  "scene": "a small live house: from behind the stage looking out at a happy crowd with raised hands; colored stage lights in pink, yellow and blue; a mic stand, amps, cables",
+  "subject": "the protagonist (Image 1) singing with a guitar and the keyboardist friend (Image 2) at a keyboard, both seen from behind; the crowd as joyful flat silhouettes",
+  "composition": "the duo in the lower foreground left and right; the crowd across the middle; lights at the top",
+  "lighting": "colorful concert lights",
+  "palette": "all five inks: fluorescent pink (#FF48B0), mustard yellow (#FFB511), cornflower blue (#62A8E5), teal (#00838A), walnut brown (#925F52)"
+}

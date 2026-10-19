@@ -1,0 +1,15 @@
+{
+  "id": "s22_mirror",
+  "input_images": [
+    {
+      "path": "raw/charsheet/charsheet_v1.png",
+      "role": "character reference only: keep the protagonist's look (short dark bob that always hides the face, cornflower-blue shirt, mustard-yellow cable-knit sweater vest, walnut-brown trousers, teal sneakers; as a child: mustard-yellow T-shirt and teal shorts) and the flat print style; do not copy the sheet layout or poses"
+    }
+  ],
+  "primary_request": "Who is the one in the mirror: a fogged bathroom mirror, the protagonist from behind; the reflection is only a blurry shape.",
+  "scene": "a small bathroom: a large rectangular mirror above a sink, completely fogged with steam; tiles; a toothbrush cup",
+  "subject": "the same young adult from the reference standing in front of the mirror, seen from behind; in the fogged mirror only a vague blurry silhouette, no facial features visible at all",
+  "composition": "the mirror large in the center-upper area (a big clean fogged surface for text later); the figure from behind in the lower foreground",
+  "lighting": "soft cool bathroom light, steam",
+  "palette": "cornflower blue (#62A8E5) and teal (#00838A) dominant, walnut brown (#925F52) and a little mustard yellow (#FFB511)"
+}

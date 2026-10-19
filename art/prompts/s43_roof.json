@@ -1,0 +1,15 @@
+{
+  "id": "s43_roof",
+  "input_images": [
+    {
+      "path": "raw/charsheet/charsheet_v1.png",
+      "role": "character reference only: keep the protagonist's look (short dark bob that always hides the face, cornflower-blue shirt, mustard-yellow cable-knit sweater vest, walnut-brown trousers, teal sneakers; as a child: mustard-yellow T-shirt and teal shorts) and the flat print style; do not copy the sheet layout or poses"
+    }
+  ],
+  "primary_request": "Breaking through: surreal — the bedroom ceiling cracks open to a starry sky, the protagonist stands on the bed reaching up.",
+  "scene": "the same bedroom seen from a low angle; the ceiling is split open with jagged edges revealing a deep starry night sky full of stars",
+  "subject": "the same young adult from the reference standing on the bed, seen from behind, one arm reaching up toward the opening",
+  "composition": "low angle; the opening in the ceiling occupies the upper half; the figure lower center",
+  "lighting": "cool starlight from above, warm lamp below",
+  "palette": "all five inks: fluorescent pink (#FF48B0), mustard yellow (#FFB511), cornflower blue (#62A8E5), teal (#00838A), walnut brown (#925F52)"
+}

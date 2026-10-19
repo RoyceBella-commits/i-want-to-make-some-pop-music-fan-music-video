@@ -1,0 +1,15 @@
+{
+  "id": "s18_shelf",
+  "input_images": [
+    {
+      "path": "raw/charsheet/charsheet_v1.png",
+      "role": "character reference only: keep the protagonist's look (short dark bob that always hides the face, cornflower-blue shirt, mustard-yellow cable-knit sweater vest, walnut-brown trousers, teal sneakers; as a child: mustard-yellow T-shirt and teal shorts) and the flat print style; do not copy the sheet layout or poses"
+    }
+  ],
+  "primary_request": "Wishing the market were more tolerant: a supermarket shelf full of identical pink boxes, one of which contains the tiny protagonist with a guitar.",
+  "scene": "a long supermarket shelf in perspective with rows and rows of identical fluorescent-pink product boxes, each with a clear window; most windows show an identical tiny generic stage; one box near the center holds the tiny protagonist with a guitar",
+  "subject": "the tiny protagonist (as in the reference) inside one box near the center, seen from behind",
+  "composition": "the central box at the center of the frame; identical boxes repeating to all edges so the camera can pull back; no price tags, no text",
+  "lighting": "flat bright supermarket light",
+  "palette": "fluorescent pink (#FF48B0) and mustard yellow (#FFB511) dominant, cornflower blue (#62A8E5) accents, candy-like"
+}
